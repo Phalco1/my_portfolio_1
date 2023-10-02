@@ -76,7 +76,7 @@ const Sidebar = () => (
             </a>
         </li>
         <li>
-            <a target="_blank" rel='nonreferrer' href='https://www.youtube.com/@STEAM_Stream365/featured'>
+            <a target="_blank" rel='nonreferrer' href='https://www.youtube.com/@kwuraat/featured'>
                 <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
             </a>
         </li>
