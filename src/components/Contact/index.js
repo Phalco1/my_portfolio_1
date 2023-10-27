@@ -1,11 +1,11 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 
 
-const Contact = () => {
+export const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
     const refForm = useRef()
@@ -17,22 +17,17 @@ const Contact = () => {
    }, [])
 
    const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
-        .sendForm(
-            'elphalco1@gmail',
-            'template_u9xqong',
-            refForm.current,
-            'gsf3VuOe3Gmbr5jTH0kpK'
-        )
+        .sendForm('service_vfif53h','template_u9xqong', refForm.current,'5RzwTc9f6ePgHM6yl')
             .then(
-                () => {
-                    alert('Message sucessfully sent!')
+                (result) => {
+                    alert(result.text)
                     window.location.reload(false)
                 },
-                () => {
-                    alert('Failed to send the message, please try again.')
+                (error) => {
+                    alert(error.text)
                 }
             )
         
@@ -60,24 +55,15 @@ const Contact = () => {
                 </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>
-                        <ul>
-                            <li className='half'>
-                                <input type='text' name='name' placeholder='name' required />
-                            </li>
-                            <li className='half'>
-                                <input type='email' name='email' placeholder='email' required />
-                            </li>
-                            <li>
-                                <input placeholder='Subject' type='text' name='subject' required/>
-                            </li>
-                            <li>
-                                <textarea placeholder='Message' name='message' required></textarea>
-                            </li>
-                            <li>
-                                <input type='submit' className='flat-button' value='SEND' />
-                            </li>
-                        </ul>
+                    <label>Name</label>
+                        <input className='half' type="text" name="user_name" />
+                            <label>Email</label>
+                                <input className='half'type="email" name="user_email" />
+                            <label>Message</label>
+                            <textarea name="message" />
+                        <input type="submit" className='flat-button' value="Send" />
                     </form>
+
                 </div>
             </div>
             <Loader type='pacman' />
