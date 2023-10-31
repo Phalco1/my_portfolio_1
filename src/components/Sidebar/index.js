@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/IMG_0509.PNG'
-import LogoSubtitle from '../../assets/images/Untitled-31 01 Artboard 1.png'
+import LogoS from '../Assets/images/IMG_0509.PNG'
+import LogoSubtitle from '../Assets/images/Untitled-31 01 Artboard 1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons'
@@ -61,7 +61,7 @@ const Sidebar = () => (
 
     <ul>
         <li>
-            <a target="_blank" rel='nonreferrer' href='https://www.linkedin.com/in/kwuraat/'>
+            <a target="_blank" rel="nonreferrer" href='https://www.linkedin.com/in/kwuraat/'>
                 <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
             </a>
         </li>

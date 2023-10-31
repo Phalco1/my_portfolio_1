@@ -1,9 +1,9 @@
 import React, { useEffect, useState }from 'react';
 import ProjectItem from '../ProjectItem/index.js';
-import './index.scss';
+import '../Projects/index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
-import { ProjectList } from '../ProjectList/ProjectList';
+import { ProjectList } from '../ProjectList/ProjectList.js';
 
 
 function Project() {
@@ -28,11 +28,11 @@ function Project() {
                             strArray={["P", "o", "r", "t", "f", "o", "l", "i", "o"]}
                             idx={15} />
                     </h1>
-                <div className='projectItem'>
-                    {ProjectList.map((project, idx) => {
-                        return <ProjectItem id={idx} name={project.name} image={project.image} />;
-                    })}
-                </div>
+                    <div className='projectList'>
+                        {ProjectList.map((project, idx) => {
+                            return <ProjectItem key={idx} id={idx} name={project.name} image={project.image} />;
+                        })}
+                    </div>
                 </div>
                 <Loader type='pacman' />
             </div>

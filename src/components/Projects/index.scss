@@ -9,12 +9,12 @@
   .projects .projectTitle {
     text-align: center;
     color: #3e497a;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bolder;
   }
   
   .projectList {
-    width: 70vw;
+    width: 40vw;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -27,10 +27,11 @@
     border-radius: 15px;
     width: 300px;
     height: 300px;
-    margin: 350px;
+    margin: 10px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #ffe745;
+    ;
   }
   .projectItem:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
@@ -67,9 +68,5 @@
   @media only screen and (max-width: 800px) {
     .projectList {
       width: 100%;
-    }
-    .projectItem {
-      width: 300px;
-      height: 300px;
     }
   }

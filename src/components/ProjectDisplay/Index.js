@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { ProjectList } from "../helpers/ProjectList";
-import "../styles/ProjectDisplay.css"
+import { ProjectList } from "../ProjectList/ProjectList";
+import "../ProjectDisplay/index.scss";
+
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -9,7 +10,7 @@ function ProjectDisplay() {
   return (
     <div className="project">
         <h1> {project.name}</h1>
-        <img src={project.image} />
+        <img src={project.image} alt="Projects" />
         <p>
             <b>Skills:</b> {project.skills}
         </p>
