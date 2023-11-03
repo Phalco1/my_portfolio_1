@@ -52,14 +52,15 @@
         font-size: 14px;
 
         h1 {
-            font-size: 53px;
+            font-size: 30px;
             font-family: 'Coolventica';
             color: #ffd700;
             font-weight: 400;
             margin-top: 0;
             position: relative;
             margin-bottom: 40px;
-            left: 10px;
+            left: 22px;
+            top: 20px;
 
             &::before{
                 content: '<h1>';

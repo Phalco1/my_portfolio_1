@@ -25,7 +25,7 @@ function Project() {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={["P", "o", "r", "t", "f", "o", "l", "i", "o"]}
+                            strArray={["P", "r", "o", "j", "e", "c", "t", "s"]}
                             idx={15} />
                     </h1>
                     <div className='projectList'>
