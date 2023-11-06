@@ -26,7 +26,7 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                I'm Paul Gooden, a dedicated student from the Delta Cohort May 2023 at LEARN Academy, on a journey to becoming a skilled full stack developer. I strive to distinguish myself in the competitive developer job market by embodying dependability, teamwork, and reliability that teams can count on. Moreover, I aim to showcase my versatility, spanning from frontend to backend development.
+                I'm Paul Gooden, on a journey to becoming a skilled full stack developer. I strive to distinguish myself in the competitive developer job market by embodying dependability, teamwork, and reliability that teams can count on. Moreover, I aim to showcase my versatility, spanning from frontend to backend development.
                 </p>
                 <p>
                 My previous experience as a Machinist's Mate in the Nuclear Reactor Department has instilled in me a strong sense of confidence and discipline. In that role, I thrived in high-pressure environments with strict deadlines, critical missions, and monthly assessments to evaluate our knowledge. Communication, problem-solving, and mastery of our tasks were vital as they directly impacted the safety and well-being of our team—a level of grit I bring to effectively study and apply knowledge in the field of development.
