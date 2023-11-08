@@ -3,7 +3,7 @@ import './index.scss'
 import LogoS from '../Assets/images/IMG_0509.PNG'
 import LogoSubtitle from '../Assets/images/Untitled-31 01 Artboard 1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faEnvelope, faGlobe, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
@@ -60,6 +60,11 @@ const Sidebar = () => (
     </nav>
 
     <ul>
+        <li>
+            <a target="_blank" rel='nonreferrer' href='https://www.kwuraat.com'>
+                <FontAwesomeIcon icon={faGlobe} color="#4d4d4e" />
+            </a>
+        </li>
         <li>
             <a target="_blank" rel="nonreferrer" href='https://www.linkedin.com/in/kwuraat/'>
                 <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
