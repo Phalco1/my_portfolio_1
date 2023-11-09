@@ -8,7 +8,8 @@ export const ProjectList = [
     {
         name: "Tic-Tac-Toe",
         image: Proj1,
-        skills: "ReactJS, Node.js, HTML, CSS"
+        skills: "ReactJS, Node.js, HTML, CSS",
+        url: "tic-tac-6ntpkwc06-phalco1.vercel.app"
     },
     {
         name: "Phalcohub",

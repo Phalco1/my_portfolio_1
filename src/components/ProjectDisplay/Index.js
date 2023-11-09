@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ProjectList } from "../ProjectList/ProjectList";
 import "../ProjectDisplay/index.scss";
 
@@ -13,6 +13,9 @@ function ProjectDisplay() {
         <img src={project.image} alt="Projects" />
         <p>
             <b>Skills:</b> {project.skills}
+        </p>
+        <p>
+          <b>Link:</b> <Link>{project.url}</Link> 
         </p>
     </div>
   );

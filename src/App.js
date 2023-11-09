@@ -6,6 +6,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Project from './components/Projects'
 import ProjectDisplay from './components/ProjectDisplay/Index'
+import { ProjectList } from './components/ProjectList/ProjectList'
 
 function App() {
   return (
@@ -17,6 +18,13 @@ function App() {
         <Route path='contact' element={<Contact />} />
         <Route path='project' element={<Project />} />
         <Route path='/project/:id' element={<ProjectDisplay />} />
+        {ProjectList.map((project, index) => (
+              <Route
+                key={index}
+                path={project.url}
+                element={<ProjectDisplay project={project} />}
+              />
+            ))}
      </Route>
     </Routes>
     </>

@@ -45,6 +45,7 @@ const About = () => {
                         <br></br>
                     Paul Gooden
                 </p>
+
             </div>
 
             <div className='stage-cube-cont'>
