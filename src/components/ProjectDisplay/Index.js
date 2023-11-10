@@ -15,7 +15,10 @@ function ProjectDisplay() {
             <b>Skills:</b> {project.skills}
         </p>
         <p>
-          <b>Link:</b> <Link>{project.url}</Link> 
+            <b>Link:</b> <Link to={project.url}>{project.url}</Link> 
+        </p>
+        <p>
+          <b>Description:</b> {project.description}
         </p>
     </div>
   );
