@@ -39,6 +39,8 @@ const Home = () => {
                 idx={3} />
                 </h1>
                 <h2>Full-Stack Developer</h2>
+                <Link to="https://phalcohub.vercel.app" className='flat-button'>
+                  GRAPHIC DESIGN Portfolio</Link>
                 <Link to="/contact" className='flat-button'>
                   CONTACT ME</Link>
             </div>
