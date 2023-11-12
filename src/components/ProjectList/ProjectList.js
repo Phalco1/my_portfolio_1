@@ -16,7 +16,7 @@ export const ProjectList = [
         name: "Phalcohub",
         image: Proj2,
         skills: "ReactJS, Node.js, HTML, CSS",
-        url: "https://phalcohub-7oqvvpyam-phalco1.vercel.app",
+        url: "https://phalcohub.vercel.app",
         description: "My Graphic Design Portfolio that I created with React to further my creativity and allow my coding and designs compliment each other. "
     },
    
