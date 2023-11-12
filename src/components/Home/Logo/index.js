@@ -1,16 +1,26 @@
-import './index.scss';
-import LogoS from '../../Assets/images/IMG_0508.PNG'
+import React from 'react'
 
-
-const Logo = () => {
-
-
-    return (
-        <div className="logo-container">
-            <img type='image' src={LogoS} alt="S" />
-        </div>
-
-    )
+function index() {
+  return (
+    <div>index</div>
+  )
 }
 
-export default Logo
+export default index
+
+// import './index.scss';
+// import LogoS from '../../Assets/images/IMG_0508.PNG'
+
+
+// const Logo = () => {
+
+
+//     return (
+//         <div className="logo-container">
+//             <img type='image' src={LogoS} alt="S" />
+//         </div>
+
+//     )
+// }
+
+// export default Logo
